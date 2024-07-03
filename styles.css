@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+header {
+  text-align: center;
+  margin: 20px 0;
+}
+
+header h1 {
+  font-size: 2.5em;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+header img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 5px solid white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+header img:hover {
+  transform: scale(1.1);
+}
+
+main {
+  width: 90%;
+  max-width: 800px;
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+h2, h3 {
+  color: #333;
+  border-bottom: 2px solid #2575fc;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  background: #f0f0f0;
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s ease-in-out;
+}
+
+ul li:hover {
+  background: #e2e2e2;
+}
+
+section#info p, section#info span {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+section#info p {
+  font-weight: bold;
+}
+
+section#links ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+section#links ul li {
+  background: none;
+  margin: 5px 0;
+  padding: 0;
+  box-shadow: none;
+}
+
+section#links ul li a {
+  text-decoration: none;
+  color: #2575fc;
+  font-weight: bold;
+  font-size: 1.2em;
+  transition: color 0.3s ease-in-out;
+}
+
+section#links ul li a:hover {
+  color: #6a11cb;
+}
+
+footer {
+  margin: 20px 0;
+  color: white;
+}
+
+@media (max-width: 600px) {
+  main {
+      width: 95%;
+      padding: 10px;
+  }
+
+  header h1 {
+      font-size: 2em;
+  }
+
+  header img {
+      width: 120px;
+      height: 120px;
+  }
+}
